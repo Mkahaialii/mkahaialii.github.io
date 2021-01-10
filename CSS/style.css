@@ -7,12 +7,8 @@
 /*COLOR SCHEME*/
 :root {
     /* CSS HEX */
-    --middle-blue-green: #84dcc6ff;
-    --indigo-dye: #09395dff;
-    --azure-x-11-web-color: #ebfcffff;
     --peach-crayola: #ffc999ff;
     --cultured: #f5f5f5ff;
-    --lavender-blush: #f9f1f8ff;
     --bronze: #be8334ff;
     --saddle-brown: #944205ff;
     --phthalo-green: #172d10ff;
@@ -68,7 +64,7 @@ p {
 /*POSITION, MARGIN, PADDING, etc.*/
 
 html {
-    background-color: var(--lavender-blush);
+    background-color: var(--cultured);
 }
 
 body {
@@ -82,7 +78,7 @@ main {
 }
 
 header, footer {
-    background-color: var(--spanish-bistre);
+    background-color: var(--phthalo-green);
     height: 100px;
     border-radius: 15px;
     text-align: center;
