@@ -1,8 +1,15 @@
-* Fonts from Google Fonts - more at https://fonts.google.com */
+/* Fonts from Google Fonts - more at https://fonts.google.com */
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Nanum+Myeongjo:wght@800&family=PT+Sans+Narrow&display=swap");
 
+:root {
+    --timberwolf: #dad7cdff;
+    --laurel-green: #a3b18aff;
+    --fern-green: #588157ff;
+    --hunter-green: #3a5a40ff;
+    --brunswick-green: #344e41ff;
+}
 body {
-  background-color: white;
+  background-color: var(--timberwolf);
   font-family: "Open Sans", sans-serif;
   padding: 5px 25px;
   font-size: 18px;
@@ -11,19 +18,77 @@ body {
 }
 
 h1{
-  text-align: center;
-  font-family: "Nanum Myeongjo", serif;
-  font-size: 3em;
+    color: var(--laurel-green);
+    text-align: center;
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 3em;
+    padding: 25px;
+    padding-bottom: 0;
+    margin: 0;
 }
 
 h2 {
+    color: var(--timberwolf);
   text-align: center;
   font-family: "Nanum Myeongjo", serif;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  margin: 0;
 }
  
-h3, p {
-  text-align: left;
+h3 {
+    color: var(--hunter-green);
+  text-align: center;
   font-family: "PT Sans Narrow", serif;
+  font-size: 2.5em;
+  margin: 0;
+  padding: 20px;
+}
+
+a {
+    color: var(--fern-green);
+    font-family: "PT Sans Narrow", serif;
+    font-size: 1.5em;
+}
+
+p {
+    color: var(--hunter-green);
+    text-align: center;
+    font-family: "PT Sans Narrow", serif;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 20px;
+}
+
+.footerContent {
+    color: var(--timberwolf);
+    text-align: center;
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 1em;
+}
+
+.footerContent a {
+    color: var(--timberwolf);
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 1em;
+}
+
+img {
+    align-items: center;
+}
+
+header {
+    background-color: var(--brunswick-green);
+    height: 150px;
+}
+
+footer {
+    background-color: var(--brunswick-green);
+    height: 100px;
+}
+
+footer p {
+    padding-top: 25px;
 }
 
 /* phone or baseline views *******************/
@@ -36,8 +101,9 @@ main {
 main section {
   margin: 0.5rem;
   border: 1px solid #bbb;
-  padding: 0 1rem;
+  padding: 0 3rem;
   background-color: #eee;
+  border-radius: 15px;
 }
 
 main picture {
@@ -51,7 +117,7 @@ main picture {
   }
 
   section:nth-child(3) {
-    grid-column: span2;
+    grid-column: span 2;
   }
 
   main section {
@@ -62,10 +128,13 @@ main picture {
 }
 
 /* Desktop Views ******************************/
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 60em){
 
   main {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main section {
   }
 
   section:nth-child(3) {
