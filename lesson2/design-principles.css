@@ -1,0 +1,80 @@
+* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Nanum+Myeongjo:wght@800&family=PT+Sans+Narrow&display=swap");
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1{
+  text-align: center;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 3em;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Nanum Myeongjo", serif;
+}
+ 
+h3, p {
+  text-align: left;
+  font-family: "PT Sans Narrow", serif;
+}
+
+/* phone or baseline views *******************/
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 0.8rem;
+}
+
+main section {
+  margin: 0.5rem;
+  border: 1px solid #bbb;
+  padding: 0 1rem;
+  background-color: #eee;
+}
+
+main picture {
+  margin: 0.5rem;
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section:nth-child(3) {
+    grid-column: span2;
+  }
+
+  main section {
+  }
+
+  main picture {
+  }
+}
+
+/* Desktop Views ******************************/
+@media only screen and (min-width: 60em) {
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  section:nth-child(3) {
+    grid-column: span 1;
+  }
+}
+
+ 
+
+ 
+
+ 
