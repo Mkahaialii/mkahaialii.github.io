@@ -1,0 +1,148 @@
+/* phone or baseline views *******************/
+@media only screen and (max-width: 600px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      font-size: 0.8rem;
+    }
+  
+    main section {
+      margin: 0.5rem;
+      border: 1px solid #bbb;
+      padding: 0 3rem;
+      background-color: white;
+      border-radius: 15px;
+    }
+  
+    main picture {
+      margin: 0.5rem;
+    }
+    
+    body {
+      background-color: white;
+      font-family: arial narrow;
+      max-width: 960px;
+      margin: 0 auto;
+      align-content: center;
+      display:flex; 
+      flex-direction:column; 
+      justify-content:center;
+      min-height:100vh;
+    }
+    
+    header {
+      background-color: var(--russian-violet);
+      height: 150px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+      padding-bottom: 10px;
+    }
+    
+    .logobox {
+      background: white;
+    }
+    
+    #logo {
+      width: 175px
+    }
+    
+    h1 {
+      color: var(--magnolia);
+      text-align: center;
+      font-family: "Nanum Myeongjo", Georgia;
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
+    
+    h2 {
+      color: white;
+      text-align: center;
+      font-family: "Nanum Myeongjo", Georgia;
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      margin: 0;
+      padding-bottom: 15px;
+    }
+    
+    h3 h4 h5 p {
+      color: black;
+      text-align: left;
+      font-family: arial narrow;
+      font-size: 1.5em;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    nav ul li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 0.75rem;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+    
+    nav ul li:hover {
+      color: white;
+      background-color: var(--carolina-blue);
+    }
+    
+    nav {
+      background-color: var(--piggy-pink);
+      text-align: justify;
+      height: 50px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    
+    main {
+      background: white;
+    }
+    
+    section {
+      margin: 10px;
+    }
+    
+    .sitemap {
+      width: 100%;
+    }
+    
+    .logo {
+      
+    }
+    
+    .wireframe {
+      width: 100%;
+    }
+    
+    .address {
+      width: 100%;
+    }
+    
+    footer {
+      background-color: var(--russian-violet);
+      height: 100px;
+      border-radius: 15px;
+    }
+    
+    .footerContent {
+      color: white;
+      text-align: center;
+      font-family: "Nanum Myeongjo", Georgia;
+      padding: 34px 0;
+      margin-bottom: 20px;
+      margin: 0;
+    }
+  
+  }
+  
