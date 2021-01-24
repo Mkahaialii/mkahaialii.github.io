@@ -1,0 +1,276 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Nanum+Myeongjo:wght@800&family=PT+Sans+Narrow&display=swap");
+
+ 
+
+:root {
+
+  --russian-violet: #0c0a3eff;
+
+  --carolina-blue: #5aa0d6ff;
+
+  --piggy-pink: #ffe4f0ff;
+
+  --magnolia: #eae6efff;
+
+  --aero-blue: #c7efcfff;
+
+  --amaranth-pink: #ff96bcff;
+
+  --lilac: #c19ac7ff;
+
+}
+/* phone or baseline views *******************/
+
+h1{
+
+  font-size: 3em;
+
+  font-family: "Nanum Myeongjo";
+
+  text-align: center;
+
+}
+
+ 
+
+h3{
+
+  font-size: 1.8em;
+
+  font-family: "Nanum Myeongjo";
+
+  text-align: center;
+
+}
+
+ 
+
+.subheading {
+
+  font-size: 0.8em;
+
+  font-family: "Nanum Myeongjo";
+
+  text-align: center;
+
+}
+
+ 
+
+ 
+
+img {
+
+  display: block;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  width: 150px;
+
+}
+
+ 
+
+header {
+
+  background-color: var(--russian-violet);
+
+  padding: 0.8em;
+
+}
+
+ 
+
+nav button {
+
+  margin: .2rem 2%;
+
+  background-color: transparent;
+
+  border: none;
+
+  font-size: 1.6rem;
+
+  color: white;
+
+  display: block;
+
+  position: absolute;
+
+}
+
+ 
+
+nav {
+
+  clear: left;
+
+  background-color: var(--amaranth-pink);
+
+  font-family: Georgia, sans-serif;
+
+  overflow: hidden;
+
+}
+
+ 
+
+nav ul {
+
+  list-style-type: none;
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+ 
+
+nav ul li a {
+
+  display: block;
+
+  padding: .8rem 2%;
+
+  text-decoration: none;
+
+  color: white;
+
+  border-top: 1px solid  ;
+
+}
+
+ 
+
+nav ul li.active {
+
+  background-color: var(--lilac);
+
+  color: white;
+
+}
+
+ 
+
+nav ul li a:hover {
+
+  background-color: var(--lilac);
+
+}
+
+ 
+
+.fixed:after {
+
+  content: "";
+
+  display: table;
+
+  clear: both;
+
+}
+
+ 
+
+.sections {
+
+  display: block;
+
+  margin: 10 px auto;
+
+  border: 1px solid var(--aero-blue) ;
+
+  padding: 15px;
+
+  background-color: white;
+
+  color: black;
+
+  font-family: Georgia, sans serif;
+
+  text-align: center;
+
+}
+
+ 
+
+footer {
+
+  background-color: var(--russian-violet);
+
+  padding: 0.8em;
+
+  font-family: Georgia, sans-serif;
+
+  font-size: 12px;
+
+  text-align: center;
+
+}
+
+ 
+
+footer a {
+
+  text-decoration: none;
+
+  color: white;
+
+}
+
+ 
+
+a:hover {
+
+  background-color: var(--lilac);
+
+}
+
+ 
+
+nav ul.visibility {
+
+  display: none
+
+}
+
+ 
+
+.topnav {
+
+  overflow: hidden;
+
+  background-color: ;
+
+  position: relative;
+
+}
+
+ 
+
+.topnav #myLinks {
+
+  display: none;
+
+}
+
+ 
+
+.topnav a.icon {
+
+  background: black;
+
+  display: block;
+
+  position: absolute;
+
+  right: 0;
+
+  top: 0;
+
+}

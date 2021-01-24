@@ -1,0 +1,92 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Nanum+Myeongjo:wght@800&family=PT+Sans+Narrow&display=swap");
+
+ 
+
+:root {
+
+  --russian-violet: #0c0a3eff;
+
+  --carolina-blue: #5aa0d6ff;
+
+  --piggy-pink: #ffe4f0ff;
+
+  --magnolia: #eae6efff;
+
+  --aero-blue: #c7efcfff;
+
+  --amaranth-pink: #ff96bcff;
+
+  --lilac: #c19ac7ff;
+
+}
+/* Tablet Views ******************************/
+
+@media only screen and (min-width: 37.5em) {
+
+    h1 {
+  
+      text-align: center;
+  
+    }
+  
+   
+  
+    h3 {
+  
+      text-align:center;
+  
+    }
+  
+   
+  
+    img {
+  
+      float: left;
+  
+    }
+  
+   
+  
+    nav button {
+  
+      display: none;
+  
+    }
+  
+   
+  
+    nav ul.visibility {
+  
+      display: block;
+  
+    }
+  
+   
+  
+    nav ul {
+  
+      margin-left: 2%;
+  
+    }
+  
+   
+  
+    nav ul li {
+  
+      float: left;
+  
+    }
+  
+   
+  
+    nav ul li a {
+  
+      border: none;
+  
+      border-right: 1px solid # ;
+  
+    }
+  
+  }
