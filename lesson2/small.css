@@ -125,23 +125,23 @@ main picture {
 
   a {
     font-size: 1.5em;
-}
+  }
 
-p {
-    font-size: 1.5em;
-}
+  p {
+      font-size: 1.5em;
+  }
 
-.footerContent {
-    font-size: 1em;
-}
+  .footerContent {
+      font-size: 1em;
+  }
 
-.footerContent a {
-    font-size: 1em;
+  .footerContent a {
+      font-size: 1em;
+  }
 }
 
 /* Desktop Views ******************************/
 @media only screen and (min-width: 60em){
-
   main {
     grid-template-columns: 1fr 1fr 1fr;
   }
