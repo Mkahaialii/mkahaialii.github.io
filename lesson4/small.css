@@ -39,7 +39,7 @@ h3{
 }
 
 h2 {
-  font-size: 1em;
+  font-size: .8em;
   color: white;
   font-family: "Nanum Myeongjo";
   text-align: center;
@@ -64,19 +64,18 @@ header {
 
 .header {
   display: flex;
-  padding: 2rem;
+  padding: 10px;
 }
 
 .sections {
-  display: flex;
+  display: block;
   margin: 10 px auto;
   border: 1px solid var(--aero-blue) ;
   padding: 15px;
   background-color: white;
   color: black;
   font-family: Georgia, sans serif;
-  align-items: center;
-  justify-content: center;
+  align-content: center;
 }
 
 footer {
