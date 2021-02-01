@@ -50,23 +50,25 @@ img {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 150px;
-  font-size: 60px;
-  padding-right: 30px;
+  width: 30%;
+  padding-right: 10px;
   text-shadow: 2px 2px 4px #000000;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .logo {
-  height: 300px;
   width: 80%;
 }
 
 header {
   background-color: var(--russian-violet);
-  padding: 0.8em;
+  display: block;
+}
+
+.header {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 2rem;
 }
 
 .sections {
@@ -90,7 +92,7 @@ footer {
 
 footer p {
   color: white;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 footer a {
@@ -101,6 +103,7 @@ footer a {
 a:hover {
   background-color: var(--lilac);
 }
+
 
 div.mobile-container {
   max-width: 100%;

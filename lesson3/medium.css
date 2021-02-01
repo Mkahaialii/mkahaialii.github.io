@@ -11,4 +11,17 @@
     justify-content:center;
     min-height:100vh;
   }
+
+  img {
+    width: 150px;
+    padding-right: 30px;
+    margin-left: 200px;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  footer p {
+    color: white;
+    font-size: 1.5em;
+  }
 }
