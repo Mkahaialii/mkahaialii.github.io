@@ -1,0 +1,14 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+  body {
+    background-color: white;
+    font-family: arial narrow;
+    max-width: 960px;
+    margin: 0 auto;
+    align-content: center;
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center;
+    min-height:100vh;
+  }
+}

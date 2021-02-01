@@ -2,45 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title> TruForecast Site Plan</title>
     <meta name="description" content="[Enter what this site is about]a">
-    <link rel="stylesheet" href="/lesson3/style.css">
+    <link rel="stylesheet" href="/lesson3/small.css">
     <link rel="stylesheet" href="/lesson3/normalize.css">
-    <link rel="stylesheet" href="/lesson3/tablet-view.css">
-    <link rel="stylesheet" href="/lesson3/mobile-view.css">
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="/lesson3/medium.css">
+    <link rel="stylesheet" href="/lesson3/large.css">
+    <script src="/JS/last.modified.js"></script>
 </head>
 <body>
     <header>
-        <!--
-        <div class="logobox">
-        <img src="/lesson3/Images/1530385-512.png" id="logo" alt="Overcast with lightning, partially covering the sun."><br>
-        </div>-->
-       
+      <img src="/lesson3/Images/1530385-512.png" alt="Logo">
+      <section class="headings">
         <H1>TruForecast</H1>
-      <h2>Where you can true and accurate weather updates.</h2>
-        <nav><ul>
-            <li><a href="index.html">Home</href=></a></li>
-            <li><a href="target-audience.html">Audience</href=></a></li>
-            <li><a href="typography.html">Typography</href=></a></li>
-            <li><a href="color-scheme.html">Color</href=></a></li>
-        </ul>        
-        </nav>
+        <h2 class="subheading">Where you can true and accurate weather updates.</h2>
+      </section>
+        
+      <div class="mobile-container">
+        <div class="topnav">
+          <nav id="myLinks" class="fixed">
+            <ul class="visibility">
+              <li><a href="index.html">Home</href=></a></li>
+              <li><a href="target-audience.html">Audience</href=></a></li>
+              <li><a href="typography.html">Typography</href=></a></li>
+              <li><a href="color-scheme.html">Color</href=></a></li>
+            </ul>        
+          </nav>
+        </div>
+      </div>
     </header>
+
     <main>
-        <section>
+        <div class="sections">
             <h2>COLOR PALETTE</h2>
             <p>With my main text in black, the majority of these colors in combination with text passes AAA level of contrast ratio. The major color of the webpage will be blue. It will have accent colors such as a soft green and a soft pink. I chose this combination because I felt it had the balance I was looking for. I wanted a solid strong color but not overbearing. I also wanted a simple color layout yet have variety and easy on the eyes. </p>
-            <img class="sitemap" src="/lesson3/Images/AllTru Forecast.png" alt="color pallet.">
-        </section>
-            
+            <img class="logo" src="/lesson3/Images/AllTru Forecast.png" alt="color pallet.">
+        </div>   
     </main>    
-  <footer>
-    <p class="footerContent">
-      &copy;<span id="year">2021</span> | Mahealani Kahaialii | Oahu, Hawaii | <a href="http://www.byui.edu/online" target="_blank">BYU-Idaho</a>
-    <br>
-    Last Update: <span class="lastModified"></span></p>
-  </footer>
-</body>
+    <footer>
+      <p class="footerContent">
+        &copy;<span id="year">2021</span> | Mahealani Kahaialii | Oahu, Hawaii | <a href="http://www.byui.edu/online" target="_blank">BYU-Idaho</a>
+      <br>
+      Last Update: <span class="lastModified"></span></p>
+    </footer>
+  </body>
 </html>
