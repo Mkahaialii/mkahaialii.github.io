@@ -57,6 +57,10 @@ img {
   padding-bottom: 30px;
 }
 
+.logo {
+  width: 80%;
+}
+
 header {
   background-color: var(--russian-violet);
   display: block;
