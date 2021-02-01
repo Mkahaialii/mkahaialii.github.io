@@ -37,7 +37,7 @@ h2 {
 }
  
 h3 {
-  color: var(--hunter-green);
+    color: var(--hunter-green);
   text-align: center;
   font-family: "PT Sans Narrow", serif;
   font-size: 2.5em;
@@ -48,14 +48,14 @@ h3 {
 a {
     color: var(--fern-green);
     font-family: "PT Sans Narrow", serif;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 p {
     color: var(--hunter-green);
     text-align: center;
     font-family: "PT Sans Narrow", serif;
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 0;
     padding: 20px;
 }
@@ -64,25 +64,22 @@ p {
     color: var(--timberwolf);
     text-align: center;
     font-family: "Nanum Myeongjo", serif;
-    font-size: .8em;
+    font-size: 1em;
 }
 
 .footerContent a {
     color: var(--timberwolf);
     font-family: "Nanum Myeongjo", serif;
-    font-size: .8em;
+    font-size: 1em;
 }
 
 img {
     align-items: center;
-    display: grid;
-    width: 100%;
 }
 
 header {
     background-color: var(--brunswick-green);
     height: 150px;
-    border-radius: 15px;
 }
 
 footer {
@@ -102,9 +99,9 @@ main {
 }
 
 main section {
-  margin: 0;
+  margin: 0.5rem;
   border: 1px solid #bbb;
-  padding: 0 1rem;
+  padding: 0 3rem;
   background-color: #eee;
   border-radius: 15px;
 }
@@ -123,27 +120,21 @@ main picture {
     grid-column: span 2;
   }
 
-  a {
-    font-size: 1.5em;
+  main section {
   }
 
-  p {
-      font-size: 1.5em;
-  }
-
-  .footerContent {
-      font-size: 1em;
-  }
-
-  .footerContent a {
-      font-size: 1em;
+  main picture {
   }
 }
 
 /* Desktop Views ******************************/
 @media only screen and (min-width: 60em){
+
   main {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main section {
   }
 
   section:nth-child(3) {
