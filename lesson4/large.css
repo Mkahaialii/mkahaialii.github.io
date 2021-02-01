@@ -15,32 +15,4 @@
 /* Desktop Views ******************************/
 
 @media only screen and (min-width: 60em) {
-    .topnav button {
-        display: none;
-    }
-
-    nav ul.visibility {
-        display: flex;
-    }
-
-    nav ul {
-        margin-left: 2%;
-    }
-
-    nav ul li { 
-        float: left;
-    }
-  
-  nav ul li a {
-    border: none;
-    border-right: 1px solid var(--aero-blue);
-    padding: .6rem 2rem;
-  }
-
-  header img {
-    width: 100%;
-  }
-
 }
-
- 

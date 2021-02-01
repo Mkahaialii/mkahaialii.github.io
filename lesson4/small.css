@@ -50,17 +50,21 @@ img {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 80px;
+  width: 30%;
   padding-right: 10px;
   text-shadow: 2px 2px 4px #000000;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 header {
   background-color: var(--russian-violet);
-  padding: 0.8em;
+  display: block;
+}
+
+.header {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 2rem;
 }
 
 .sections {
