@@ -2,36 +2,43 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Nanum+Myeongjo:wght@800&family=PT+Sans+Narrow&display=swap");
 
- 
-
 :root {
-
   --russian-violet: #0c0a3eff;
-
   --carolina-blue: #5aa0d6ff;
-
   --piggy-pink: #ffe4f0ff;
-
   --magnolia: #eae6efff;
-
   --aero-blue: #c7efcfff;
-
   --amaranth-pink: #ff96bcff;
-
   --lilac: #c19ac7ff;
-
 }
-
- 
 
 /* Desktop Views ******************************/
 
 @media only screen and (min-width: 60em) {
+    .topnav button {
+        display: none;
+    }
 
+    nav ul.visibility {
+        display: flex;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li { 
+        float: left;
+    }
+  
   nav ul li a {
+    border: none;
+    border-right: 1px solid var(--aero-blue);
+    padding: .6rem 2rem;
+  }
 
-    padding: 1.5em;
-
+  header img {
+    width: 100%;
   }
 
 }

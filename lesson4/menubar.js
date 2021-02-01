@@ -1,15 +1,8 @@
-function myFunction() {
-
-  var x = document.getElementById("navMenu");
-
-  if (x.style.display === "block") {
-
+function menu() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "flex") {
     x.style.display = "none";
-
   } else {
-
-    x.style.display = "block";
-
+    x.style.display = "flex";
   }
-
 }
