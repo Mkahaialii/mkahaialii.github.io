@@ -27,14 +27,14 @@
 h1 {
     color: var(--cultured);
     font-family: var(--h1-heading);
-    font-size: 3em;
+    font-size: 2em;
     padding: 15px;
 }
 
 h2 {
     color: var(--saddle-brown);
     font-family: var(--h2-heading);
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0;
     padding: 25px 33px 25px 25px;
 }
@@ -68,7 +68,6 @@ html {
 }
 
 body {
-    max-width: 75%;
     margin: 0px auto;
 }
 
@@ -84,11 +83,12 @@ header, footer {
     text-align: center;
 }
 
-header img {
+img {
     float: right;
     border: solid 5px var(--gold-metallic);
     margin-left: 150px;
     margin-right: 100px;
+    width: 100%;
 }
 
 footer p{

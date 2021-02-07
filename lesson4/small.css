@@ -24,12 +24,13 @@
 /* phone or baseline views *******************/
 
 h1{
-  font-size: 3em;
+  font-size: 2em;
   color: var(--aero-blue);
   font-family: "Nanum Myeongjo";
   text-align: center;
   padding-bottom: 0;
   margin-bottom: 0;
+  padding-top: 20px;
 }
 
 h3{
@@ -49,8 +50,8 @@ h2 {
 img {
   display: flex;
   margin-left: auto;
-  margin-right: auto;
-  width: 30%;
+  margin-right: 0;
+  max-width: 30%;
   padding-right: 10px;
   text-shadow: 2px 2px 4px #000000;
   padding-top: 30px;
@@ -79,14 +80,13 @@ header {
   background-color: white;
   color: black;
   font-family: Georgia, sans serif;
-  align-content: center;
+  text-align: center;
 }
 
 footer {
   background-color: var(--russian-violet);
   padding: 0.8em;
   font-family: Georgia, sans-serif;
-  font-size: 12px;
   text-align: center;
 }
 
@@ -115,6 +115,7 @@ div.mobile-container {
   position: relative;
   color: black;
   display: flex;
+  max-width: 100%;
 }
 
 .topnav #myLinks {

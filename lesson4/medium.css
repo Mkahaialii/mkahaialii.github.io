@@ -15,6 +15,11 @@
 /* Tablet Views ******************************/
 
 @media only screen and (min-width: 37.5em) {
+
+  h1 {
+    font-size: 3em;
+  }
+
   body {
     background-color: white;
     font-family: arial narrow;
@@ -28,15 +33,28 @@
   }
 
   img {
-    width: 150px;
-    padding-right: 30px;
-    margin-left: 200px;
-    margin-right: 0;
-    padding: 0;
+    max-width: 10%;
+  }
+
+  section.headings {
+    margin-right: 30%;
+  }
+
+  nav ul li a {
+    background-color: var(--aero-blue);
+    color: black;
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.8rem 2%;
+    border-top: 1px solid #999;
+    font-size: .95rem;
+    font-family: "Nanum Myeongjo"
   }
 
   footer p {
     color: white;
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
