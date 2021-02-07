@@ -44,6 +44,11 @@ a {
     font-family: var(--body-text);
 }
 
+ul li a {
+    font-size: 1em;
+    list-style-type: none;
+}
+
 p {
     color: var(--phthalo-green);
     font-family: var(--body-text);
@@ -65,6 +70,8 @@ p {
 
 html {
     background-color: var(--cultured);
+    max-width: 950px;
+    margin: auto;
 }
 
 body {
@@ -86,9 +93,9 @@ header, footer {
 img {
     float: right;
     border: solid 5px var(--gold-metallic);
-    margin-left: 150px;
     margin-right: 100px;
-    width: 100%;
+    width: 40%;
+    margin-top: 20px;
 }
 
 footer p{
