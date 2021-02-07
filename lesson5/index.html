@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title> Preston Forecast</title>
   <meta name="description" content="Preston Town Forecast for Weather Site Assignment. BYU-Idaho WDD 230">
-  <link rel="stylesheet" href="/lesson4/large.cs">
+  <link rel="stylesheet" href="/lesson5/large.cs">
   <link rel="stylesheet" href="/lesson3/normalize.css">
-  <link rel="stylesheet" href="/lesson4/medium.css">
-  <link rel="stylesheet" href="/lesson4/small.css">
+  <link rel="stylesheet" href="/lesson5/medium.css">
+  <link rel="stylesheet" href="/lesson5/small.css">
   <script src="/JS/last.modified.js"></script>
   <script src="/lesson4/menubar.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -18,80 +18,107 @@
 <body>
   <header>
     <div class="header">
-    <img src="/lesson3/Images/1530385-512.png" alt="Logo">
-    <section class="headings">
-      <H1>TruForecast</H1>
-      <h2 class="subheading">Where you can true and accurate weather updates.</h2>
-    </section>
+      <img class="logo" src="/lesson3/Images/1530385-512.png" alt="Logo">
+      <section class="headings">
+        <H1>TruForecast</H1>
+        <h2 class="subheading">Where you can true and accurate weather updates.</h2>
+      </section>
     </div>
 
-  <div class="mobile-container">
-    <div class="topnav">
-      <nav id="myLinks" class="fixed">
-        <ul class="visibility">
-          <li><a href="#">Home</href=></a></li>
-          <li><a href="#">Fish Haven</href=></a></li>
-          <li><a href="#">Soda Springs</href=></a></li>
-          <li><a href="#">Preston</href=></a></li>
-          <li><a href="#">Storm Center</href=></a></li>
-          <li><a href="#">Gallery</href=></a></li>
-        </ul>
-      </nav>
-      <button href="javascript:void(0);" class="icon" onclick="menu()"><i class="fa fa-bars"></i></button>
+    <div class="mobile-container">
+      <div class="topnav">
+        <nav id="myLinks" class="fixed">
+          <ul class="visibility">
+            <li><a href="#">Home</href=></a></li>
+            <li><a href="#">Fish Haven</href=></a></li>
+            <li><a href="#">Soda Springs</href=></a></li>
+            <li><a href="#">Preston</href=></a></li>
+            <li><a href="#">Storm Center</href=></a></li>
+            <li><a href="#">Gallery</href=></a></li>
+          </ul>
+        </nav>
+        <button href="javascript:void(0);" class="icon" onclick="menu()"><i class="fa fa-bars"></i></button>
+      </div>
     </div>
-  </div>
-  
+
   <main>
     <div class="sections"><h3>PRESTON</h3></div>
-    <div class="sections">
-      <img class="headerimg" src="/Photos/Header Img.jpg" alt="Overlooking green valley">
+
+    <div class="weather">
       <section class="section-weather">
         <h4>WEATHER SUMMARY</h4>
+        <p class="paragraph"><strong>Currently:</strong> Overcast</p>
+        <p class="paragraph"><strong>High:</strong> 68°F</p>
         <p class="paragraph"><strong>Temperature:</strong> 67ºF</p>
         <p class="paragraph"><strong>Humidity:</strong> 42%</p>
         <p class="paragraph"><strong>Wind:</strong> 10mph</p>
-    </section>
+      </section>
     </div>
-    <div class="sections">
+
+    <div class="five">
       <h4>FIVE DAY FORECAST</h4>
       <section>
         <table class="table">
-           <tbody><tr class="color-table">
-             <th>Mon</th>
-             <th>Tue</th>
-             <th>Wed</th>
-             <th>Thu</th>
-             <th>Fri</th>
-           </tr>
-           <tr>
-             <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
-             <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
-             <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
-             <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
-             <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
-           </tr>
-             <tr><td class="color-table">70°.50° F</td>
-             <td class="color-table"> 68°.48° F</td>
-             <td class="color-table">68°.45° F</td>
-             <td class="color-table">67°.45° F</td>
-             <td class="color-table">65°.40° F</td>
-         </tr></tbody></table>
-        </section></div>
-    <div class="article">ARTICLE</div>
+          <tbody><tr class="color-table">
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            </tr>
+          
+            <tr>
+            <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
+            <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
+            <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
+            <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
+            <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
+            </tr>
+          
+            <tr>
+            <td class="color-table">70°.50° F</td>
+            <td class="color-table"> 68°.48° F</td>
+            <td class="color-table">68°.45° F</td>
+            <td class="color-table">67°.45° F</td>
+            <td class="color-table">65°.40° F</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
 
-      <div class="contact">
-        <img src="images/preston_map.jpg">
-        <section>
-          <p><strong>Checking Weather Site</strong></p>
-          <p>📌 30N ft N</p>
-          <p>Preston ID 83263</p>
-          <br>
-          <p>Call: 123-456-7890</p>
-          <p>📧 mam20002@byui.edu</p>
-          <img src="images/facebook_logo.png"><img src="images/instagram_logo.png">
-          <img src="images/whatsapp_logo.png">
-        </section>
-      </div>CONTACT INFORMATION</div>
+    <div class="article">
+      <img class="boatnews" src="/Photos/boating.jpg" alt="boat on low tide">
+      <h4>ARTICLE</h4>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, 
+      elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. 
+      Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, 
+      sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In posuere 
+      felis nec tortor. Pellentesque faucibus. Ut accumsan ultricies elit. Maecenas at justo id velit placerat molestie. Donec dictum lectus non odio. Cras a ante vitae enim iaculis aliquam. Mauris nunc 
+      quam, venenatis nec, euismod sit amet, egestas placerat, est. 
+      </p>
+    </div>
+
+    <div class="contact">
+      <img class="map" src="/Photos/Preston.PNG" alt="Map of Preston">
+      <div class="information">
+
+        <h4>CONTACT INFORMATION</h4>
+        <ul class="navlinks">
+          <li><img src="/Photos/location.ico" style="margin-right: 20px " width="15"> Address: Preston, ID</li>
+          <li><img src="/Photos/cell.ico" style="margin-right: 20px " width="15"> Phone: 123 456 7890</li>                
+          <li><img src="/Photos/email.ico" style="margin-right: 20px " width="15"> Email: kah20003@byui.edu</li>
+        </ul>
+
+
+        <div class="social-icons">
+          <!-- icons -->
+          <img src="/Photos/facebook.png" width="30">
+          <img src="/Photos/Insta.png" width="30">
+          <img src="/Photos/Twitter.png" width="30">
+        </div>
+      </div>
+    </div>
   </main> 
 
   <footer>

@@ -23,7 +23,7 @@
   body {
     background-color: white;
     font-family: arial narrow;
-    max-width: 960px;
+    max-width: 950px;
     margin: 0 auto;
     align-content: center;
     display:flex; 
@@ -32,12 +32,17 @@
     min-height:100vh;
   }
 
-  img {
-    max-width: 10%;
+  .logo {
+    width: 100px;
   }
 
   section.headings {
     margin-right: 30%;
+  }
+
+
+  .article {
+    margin-top: 10px;
   }
 
   nav ul li a {
@@ -51,6 +56,17 @@
     border-top: 1px solid #999;
     font-size: .95rem;
     font-family: "Nanum Myeongjo"
+  }
+
+  .map {
+    width: 400px;
+    margin-right: 1em;
+    float: left;
+  }
+
+  .social-icons {
+    width: 350px;
+    padding: .30em;
   }
 
   footer p {

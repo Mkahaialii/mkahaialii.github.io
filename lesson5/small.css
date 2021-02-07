@@ -33,12 +33,6 @@ h1{
   padding-top: 20px;
 }
 
-h3{
-  font-size: 1.8em;
-  font-family: "Nanum Myeongjo";
-  text-align: center;
-}
-
 h2 {
   font-size: .8em;
   color: white;
@@ -47,7 +41,53 @@ h2 {
   padding-bottom: 25px;
 }
 
-img {
+h3{
+  font-size: 1.8em;
+  font-family: "Nanum Myeongjo";
+  text-align: center;
+}
+
+h4 {
+  font-family: "Nanum Myeongjo";
+  font-size: 1em;
+  text-align: left;
+}
+
+/*WEATHER*/
+
+/*FIVE DAY*/
+div.five {
+  display: block;
+  max-width: 100%;
+  background-color: var(--aero-blue);
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*ARTICLE*/
+div.article {
+  display: block;
+  align-content: center;
+  text-align: justify;
+  padding: 25px;
+}
+
+div.article, h4 {
+  margin-top: 0;
+}
+
+.boatnews {
+  margin: 5px;
+  width: 50%;
+  max-width: 250px;
+  box-shadow: 0 0 10px #222;
+  float: left;
+}
+
+.logo {
   display: flex;
   margin-left: auto;
   margin-right: 0;
@@ -56,10 +96,6 @@ img {
   text-shadow: 2px 2px 4px #000000;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.logo {
-  width: 80%;
 }
 
 header {
@@ -72,7 +108,24 @@ header {
   padding: 10px;
 }
 
-.sections {
+div.weather {
+  background: url("/Photos/Beautiful_summer_weather_in_Escanaba,_MI(1).jpg");
+  background-position-x: 0;
+  background-position-y: 0;
+  background-size: auto;
+}
+
+.section-weather {
+  height:200px;
+  width: 200px;
+  background: var(--piggy-pink);
+  border-radius: 5px;
+  text-align: left;
+  margin: 10px;
+  padding: 15px;
+}
+
+main div {
   display: block;
   margin: 10 px auto;
   border: 1px solid var(--aero-blue) ;
@@ -81,6 +134,39 @@ header {
   color: black;
   font-family: Georgia, sans serif;
   text-align: center;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.5em;
+  background-color: var(--magnolia);
+}
+
+.navlinks {
+  list-style-type: none;
+  text-align: left;
+}
+
+.map {
+  display: block;
+  margin-left: auto;
+  height:auto;
+  padding: 1em;
+  border: 1px solid #999;
+}
+
+.information {
+  box-sizing: border-box;
+  border: none;
+  background-color: var(--magnolia);
+}
+
+.social-icons {
+  display: inline;
+  float: left;
+  border: none;
+  background-color: var(--magnolia);
 }
 
 footer {
