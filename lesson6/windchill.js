@@ -8,7 +8,7 @@ function doInputOutput() {
     document.getElementById('displayWindChill').innerHTML = wc.toFixed(0) + "℉.";
         
     }
-
+    
 
 function windChill (tempF,speed) {
 

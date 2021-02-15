@@ -1,5 +1,4 @@
 window.onload = function toggleAnnouncement() {
-   
   
     let d = new Date();
     let q = d.getDay();
