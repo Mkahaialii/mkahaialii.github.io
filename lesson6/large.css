@@ -1,0 +1,43 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Nanum+Myeongjo:wght@800&family=PT+Sans+Narrow&display=swap");
+
+:root {
+  --russian-violet: #0c0a3eff;
+  --carolina-blue: #5aa0d6ff;
+  --piggy-pink: #ffe4f0ff;
+  --magnolia: #eae6efff;
+  --aero-blue: #c7efcfff;
+  --amaranth-pink: #ff96bcff;
+  --lilac: #c19ac7ff;
+}
+
+/* Desktop Views ******************************/
+@media only screen and (min-width: 60em) {
+  h1 {
+    font-size: 45px;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  .page-title {
+    width: 95%;
+  }
+
+  .social {
+    width: 35px;
+  }
+
+  #pancakes.announcement {
+    position: relative;
+    width: 100%;
+    padding: .5rem;
+  }
+}

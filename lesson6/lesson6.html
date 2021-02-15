@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+	<meta name="author" content="Mahealani Kahaialii">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Preston, Idaho Weather Page mock-up for BYU-Idaho WDD 230">
+	<title>Preston Town Page</title>
+  <link rel="stylesheet" href="/lesson6/large.css">
+  <link rel="stylesheet" href="/lesson3/normalize.css">
+  <link rel="stylesheet" href="/lesson6/medium.css">
+  <link rel="stylesheet" href="/lesson6/small.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <script src="/menu.js"></script>
+  <script src="/JS/last.modified.js"></script>
+  <script src="/banner.js"></script>
+  <script src="/windchill.js"></script>
+  <link rel="icon" type="image/ico" sizes="32x32" href="/Photos/favicon.ico">
+  <link rel="icon" type="image/ico" sizes="16x16" href="/Photos/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  
+<body>
+  <!--Header-->
+  <div id="header-content">
+    <aside onload="toggleAnnouncement()" id="pancakes" class="announcement">
+        Saturday = Preston Pancakes in the Park!
+        9:00 a.m. Saturday at the city park pavilion.
+    </aside>
+    <header>
+      <div class="logobox">
+        <img src="/lesson3/Images/1530385-512.png" id="logo" alt="Logo">
+        <h1 class="header-logo">TruForecast</h1>
+        <p class="motto">Where you can get true weather updates.</p>
+      </div>
+    </header>
+  </div>
+  
+  <!--Navigation Menu-->
+  <nav class="navigation">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="hamNav" class="hide">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a class="active" href="preston6.html">Preston</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <div class="sections"><h3>PRESTON, IDAHO</h3></div>
+
+    <picture class="hero">
+      <source srcset="/Photos/wdd230_image_Medium.jpg" media="(min-width: 500px) and (max-width: 800px)">
+      <source srcset="/Photos/wdd230_Large.jpg" media="(min-width:800px )">
+      <img  class="hero-image" src="/Photos/wdd230_image_Small.jpg" alt="Photo of grassland and mountains in Idaho"><br>
+      <div class="weather">
+        <section class="section-weather">
+          <h4>WEATHER SUMMARY</h4>
+          <p class="paragraph"><strong>Currently:</strong> Overcast</p>
+          <p class="paragraph"><strong>High:</strong><span id="temperature">67</span>ºF</p>
+          <p class="paragraph"><strong>Temperature:</strong> 65ºF</p>
+          <p class="paragraph"><strong>Humidity:</strong> 42%</p>
+          <p class="paragraph"><strong>Wind:</strong><span id="windspeed">15</span></p>
+          <p class="paragraph"><strong>Feels Like:</strong><span id="displayWindChill">42</span>ºF</p>
+        </section>
+      </div>
+    </picture>
+
+    <div class="five">
+        <h4>FIVE DAY FORECAST</h4>
+        <section class="fiveday">
+          <table class="table">
+            <tbody><tr class="color-table">
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              </tr>
+            
+              <tr>
+              <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
+              <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
+              <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
+              <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
+              <td><img class="fiveday" src="/Photos/iconfinder_weather-04_1530389.png" alt="overcast"></td>
+              </tr>
+            
+              <tr>
+              <td class="color-table">70°.50° F</td>
+              <td class="color-table"> 68°.48° F</td>
+              <td class="color-table">68°.45° F</td>
+              <td class="color-table">67°.45° F</td>
+              <td class="color-table">65°.40° F</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    <br>
+    
+    <article>
+      <h3>HIGHLIGHTS</h3>
+      <hr>
+      <img class="boat" src="/Photos/boating.jpg" alt="Boat on shore">
+      <p class="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Dui accumsan sit amet nulla facilisi morbi tempus iaculis urna. Diam donec adipiscing tristique risus nec feugiat in fermentum. Sit amet est placerat in egestas erat imperdiet sed euismod. Cras pulvinar mattis nunc sed blandit libero volutpat. Aliquam faucibus purus in massa tempor nec feugiat. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Imperdiet proin fermentum leo vel orci porta non.</p>
+    </article>
+    <br>
+    
+    <section class="contact-us">
+      <div class="location-Map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628254225!2d-111.91534457427268!3d42.09980531202934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612503781723!5m2!1sen!2sus" width="350" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" alt="map of Preston Idaho"></iframe>
+      </div>
+
+      <div class="contact">
+        <h4>CONTACT INFORMATION</h4>
+        <p>TruForecast<br>
+            N Main Street<br>
+            Anytown, Anywhere 12345<br><br>
+            +1 555-555-5555<br><br>
+            support@truforecast.com<br><br>
+          <img class="social" src="/Photos/Insta.png" alt="Instagram link">
+          <img class="social" src="/Photos/facebook.png" alt="Facebook link">
+          <img class="social" src="/Photos/Twitter.png" alt="Twitter link">
+        </p>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p class="footerContent">&copy;<span id="year">2021</span> | Mahealani Kahaialii | Oahu, Hawaii | <a href="http://www.byui.edu/online" target="_blank">BYU-Idaho</a><br>Last Update: <span class="lastModified"></span></p>
+  </footer>
+  </body>
+</html>
