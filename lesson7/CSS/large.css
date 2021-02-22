@@ -1,0 +1,106 @@
+@media only screen and (min-width: 64rem) {
+    nav {
+      width: 80rem;
+      align-items: center;
+      font-size: 1rem;
+    }
+
+    nav button {
+      display: none;
+      padding: 2em;
+    }
+  
+    nav ul.hide {
+      display: flex;
+    }
+
+    nav ul li {
+      flex: 1 1 100%;
+    }
+
+    nav ul li a {
+      border: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
+      padding: 0.6rem 1rem;
+      text-align: center;
+    }
+  
+    header {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 200px 10px 10px;
+      grid-gap: 3em;
+    }
+  
+    .headings1 {
+      display: grid;
+      grid-column: 2/6;
+      grid-row: 3;
+      font-size: 2.5rem;
+      padding-top: 10px;
+    }
+
+    section.headings1 {
+      text-align: left;
+      font-size: 2.5rem;
+      margin-bottom: 0;
+      margin-top: 8rem;
+    }
+
+    .headings2 {
+      display: grid;
+      grid-column: 2/6;
+      text-align: left;
+   }
+
+    h2.headertitle {
+      font-size: 1.350rem;
+    }
+
+    div.headings2 {
+      margin-top: 30px;
+    }
+  
+    nav {
+      grid-column: 1/6;
+      width: 80rem;
+    }
+  
+     #headerimg_small {
+      position: relative;
+      padding-right: 2em;
+      width: 300px;
+      margin-top: 11rem;
+      margin-right: 2rem;
+    }
+
+    #pancakes.announcement {
+      position: absolute;
+      width: 100%;
+      padding: .5rem;
+      margin-bottom: 5rem;
+    }
+  
+    main {
+      max-width: 80rem;
+      align-items: center;
+    }
+
+    .smicon {
+      width: 60px;
+    }
+  
+    div#weather_pics {
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 80rem;
+    }
+
+    h2.gal_hl {
+        font-size: 2rem;
+    }
+  
+    .weather_gallery:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.8);
+    }
+}
+  

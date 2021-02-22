@@ -45,6 +45,7 @@ function preloadImage(img) {
   }
 
   img.src = src;
+  img.removeAttribute("data-src");
 }
 
 //will start loading .img file when it is 300px below the viewport)

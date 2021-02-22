@@ -1,0 +1,257 @@
+body {
+    font-size: 16px;
+    font-family: "Libre Baskerville", serif;
+  }
+  
+  header,
+  nav,
+  main,
+  footer {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  header {
+    color: #EAE6EF;
+    /* display: flex;
+    flex-flow: column; */
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    background-color: #0C0A3E;
+  }
+  
+  #headings {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header img {
+    width: 80px;
+    height: auto;
+    float: left;
+    padding-right: 5%;
+    padding-left: 2%;
+  }
+  
+  section.headings1 {
+    text-align: center;
+    margin-top: -15px;
+  }
+  
+  .headings1 {
+    font-size: 1.2rem;
+  }
+  
+  div.headings2 {
+    text-align: center;
+    font-size: 0.6rem;
+    margin-top: -50px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h4,
+  h6 {
+    font-family: "Georgia", sans-serif;
+  }
+  
+  aside.announcement {
+    background-color: #FFE4F0;
+    color: black;
+    padding: 2em;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  aside#pancakes.announcement.hide {
+    display: none;
+  }
+  
+  .headertitle {
+    color: #5AA0D6;
+  }
+  nav {
+    background-color: #C7EFCF;
+  }
+  
+  nav button {
+    margin: 0.2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: black;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem 2%;
+    color: black;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #C7EFCF;
+  }
+  
+  nav ul li.active a {
+    background-color: #EAE6EF;
+    color: #0C0A3E;
+  }
+  
+  .herodiv {
+    position: relative;
+  }
+  
+  .weathersummary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #FFE4F0;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    grid-column-gap: 1.5rem;
+  }
+  
+  h3#weather_summary {
+    grid-column: 1/3;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+  }
+  
+  .heroimg {
+    max-width: 100%;
+  }
+  
+  nav ul li a:hover {
+    background-color: #EAE6EF;
+    color: black;
+  }
+  
+  nav ul.hide {
+    display: none;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  h2.city {
+    padding-top: 20px;
+  }
+  
+  .contentbox {
+    background-color: white;
+    padding: 12px;
+    display: block;
+    margin: 10px auto;
+    border: 1px;
+    color: black;
+  }
+  
+  footer {
+    background-color: #0C0A3E;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  footer a:visited {
+    color: #C7EFCF;
+  }
+  
+  footer a {
+    color: white;
+  }
+  
+  section.headings1 {
+    text-align: left;
+  }
+  
+  div#mapdiv {
+    color: #2a3640;
+    text-align: center;
+    margin: 3rem 0 0 0;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  div#five_day {
+    display: none;
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  div.contentbox {
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+  }
+  
+  img#ice_shack {
+    display: block;
+    width: 96%;
+    margin: 0 2%;
+    background-color: white;
+  }
+  .smicon {
+    width: 30px;
+    padding: 5px;
+  }
+  
+  iframe {
+    display: none;
+  }
+  
+  div#weather_pics {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr;
+  }
+  
+  img.weather_gallery {
+    width: 100%;
+    padding: px;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  h2.gal_hl {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  figcaption {
+    text-align: center;
+    color: white;
+  }
+  
+  figure.gallery {
+    margin: 5%;
+  }
+  
+  figure.gallery img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+  figure.gallery img {
+    filter: blur(0em);
+    transition: filter 1.5s;
+  }
+  

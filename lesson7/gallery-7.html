@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>TruForecast Gallery</title>
+    <meta name="View weather footage and highlight photos."/>
+    <link rel="shortcut icon" href="/Photos/favicon.ico"/>
+    <link rel="stylesheet" href="/lesson7/CSS/normalize.css" />
+    <link rel="stylesheet" href="/lesson7/CSS/small.css" />
+    <link rel="stylesheet" href="/lesson7/CSS/medium.css" />
+    <link rel="stylesheet" href="/lesson7/CSS/large.css" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <header>
+      <aside onload="toggleAnnouncement()" id="pancakes" class="announcement">
+        Saturday = Preston Pancakes in the Park!<br />
+        9:00 a.m. Saturday at the city park pavilion.
+      </aside>
+
+      <!---------------------------picture-density sensitive logo (replacing .png with .svg)------------------->
+      <picture>
+        <img
+          id="headerimg_small"
+          src="/lesson3/Images/1530385-512.png"
+          alt="AllTru/forecast Logo"
+      /></picture>
+      <section class="headings1">
+        <h1 class="headertitle">AllTruForecast</h1>
+        <br />
+      </section>
+      <div class="headings2">
+        <h2 class="headertitle">
+          Where you can get true weather updates.
+        </h2>
+      </div>
+      <nav id="headernav">
+        <button id="navbut" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="#">Home</a></li>
+          <li><a href="https://mkahaialii.github.io/preston-6.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li class="active"><a href="https://mkahaialii.github.io/gallery-7.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="gal_hl">Image Gallery</h2>
+      <div id="weather_pics">
+        <figure class="gallery">
+            <picture>
+                <img class="weather_gallery" src="img/placeholder_gallery.jpg"
+                data-src="img/gallery_opt_imgs/cloudy_400.jpg"
+                alt="cloudy sky">
+            <figcaption>Cloudy Idaho Skies</figcaption>
+        </figure>
+
+        <figure class="gallery">
+            <picture>
+                <img class="weather_gallery" src="img/placeholder_gallery.jpg"
+                data-src="img/gallery_opt_imgs/breezy_400.jpg"
+                alt="cloudy sky">
+            <figcaption>A breezy Southeastern Idaho day</figcaption>
+        </figure>
+
+        <figure class="gallery">
+            <picture>
+                <img class="weather_gallery" src="img/placeholder_gallery.jpg"
+                data-src="img/gallery_opt_imgs/frost_400.jpg"
+                alt="frosty mountain scene">
+
+            <figcaption>An early season frost</figcaption>
+        </figure>
+
+        <figure class="gallery">
+          <picture>
+              <img class="weather_gallery" src="img/placeholder_gallery.jpg"
+              data-src="img/gallery_opt_imgs/gusty_400.jpg"
+              alt="wind farm in green field">
+          <figcaption>Idaho wind means green energy</figcaption>
+      </figure>
+
+          <figure class="gallery">
+            <picture>
+                <img class="weather_gallery" src="img/placeholder_gallery.jpg"
+                data-src="img/gallery_opt_imgs/lightning_400.jpg"
+                alt="single lightning strike">
+            <figcaption>Thunder clap</figcaption>
+        </figure>
+
+        <figure class="gallery">
+            <picture>
+                <img class="weather_gallery" src="img/placeholder_gallery.jpg"
+                data-src="img/gallery_opt_imgs/rain_400.jpg"
+                alt="Autumn leaves in a rain puddle">
+            <figcaption>Autumn rains</figcaption>
+        </figure>
+
+        <figure class="gallery">
+            <picture>
+                <img class="weather_gallery" src="img/placeholder_gallery.jpg"
+                data-src="img/gallery_opt_imgs/rainbow_400.jpg"
+                alt="rainbow">
+            <figcaption>Rainbow majesty</figcaption>
+        </figure>
+
+        <figure class="gallery">
+          <picture>
+              <img class="weather_gallery" src="img/placeholder_gallery.jpg"
+              data-src="img/gallery_opt_imgs/ice_400.jpg"
+              alt="snowflake">
+          <figcaption>Winter's first storm</figcaption>
+      </figure>
+
+        <figure class="gallery">
+            <picture>
+                <img class="weather_gallery" src="img/placeholder_gallery.jpg"
+                data-src="img/gallery_opt_imgs/thunder_400.jpg"
+                alt="night lightning">
+            <figcaption>Evening thundershowers</figcaption>
+        </figure>       
+
+        <figure class="gallery">
+          <picture>
+              <img class="weather_gallery" src="img/placeholder_gallery.jpg"
+              data-src="img/gallery_opt_imgs/part_cloud_400.jpg"
+              alt="ripe wheatfield with cloudy skies">
+          <figcaption>Partly cloudy skies for a chance of rain</figcaption>
+        </figure>
+
+        <figure class="gallery">
+            <picture>
+                <img class="weather_gallery" src="img/placeholder_gallery.jpg"
+                data-src="img/gallery_opt_imgs/summer_storm_400.jpg"
+                alt="moody skies">
+            <figcaption>Moody skies</figcaption>
+        </figure>
+
+        <figure class="gallery">
+          <picture>
+
+              <img class="weather_gallery" src="img/placeholder_gallery.jpg"
+              data-src="img/gallery_opt_imgs/fog_400.jpg"
+              alt="morning mist">
+          <figcaption>Morning mist across the valley</figcaption>
+      </figure>
+
+    </div>
+
+      <div id="mapdiv">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d94731.53967909195!2d-111.880325!3d42.099747!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612414617377!5m2!1sen!2sus"
+          width="400"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+
+        <section id="contact_info">
+          <h4>Contact Us</h4>
+          <p>
+            TruForecast<br />
+            Main St<br />
+            Preston, ID 86432<br /><br />
+            &#9742; &nbsp; 801 555-1234<br /><br />
+            &#9993; &nbsp; email@Truforecast.com<br />
+          </p>
+          <a
+            href="#"
+            ><img class="smicon" src="#" alt="#" /></a
+          >
+          <a href="https://twitter.com/"
+            ><img class="smicon" src="/Photos/Twitter.png" alt="twitter icon"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img class="smicon" src="/Photos/Insta.png" alt="instagram icon"
+          /></a>
+          <a href="https://www.facebook.com/"
+            ><img class="smicon" loading="lazy" src="/Photos/facebook.png" alt="facebook icon"
+          /></a>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> Mahealani Kahaialii | Oahu, Hawaii |
+        <a class="footlink" href="https://www.byui.edu/online"
+          >BYU-I Online</a
+        >
+      </p>
+      <span id="currentdate"></span><br /><br />
+    </footer>
+    <script src="/currentdate.js"></script>
+    <script src="/lesson7/JS/pancake.js"></script>
+    <script src="/lesson7/JS/lazyload.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Nanun Myeongjo", "PT Sans Narrow"],
+        },
+      });
+    </script>
+  </body>
+</html>

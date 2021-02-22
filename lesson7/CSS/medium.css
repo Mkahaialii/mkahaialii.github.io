@@ -1,0 +1,106 @@
+@media only screen and (min-width: 35rem) {
+    section.headings1 {
+      font-size: 2rem;
+      margin-top: 5rem;
+    }
+  
+    div.headings2 {
+      font-size: 0.8rem;
+    }
+  
+    section.headings1 {
+      text-align: left;
+    }
+  
+    #headerimg_small {
+      padding-right: 2em;
+      width: 180px;
+    }
+  
+    .weathersummary {
+      top: 5rem;
+      left: 2rem;
+      padding: 1rem;
+    }
+  
+    .weather_icon {
+      width: 100px;
+    }
+  
+    div#five_day {
+      display: block;
+      width: 100%;
+    }
+  
+    tbody {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+    }
+    
+    table#forecast_table {
+      width: 85%;
+      padding-bottom: 45px;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      text-align: center;
+      color: white;
+    }
+  
+    .color_table {
+      background-color: #2a3640;
+    }
+  
+    table.center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    h3.five_day_title {
+      font-size: 1.5rem;
+    }
+  
+    .weather_icon {
+      padding: 15px;
+    }
+  
+    img#ice_shack {
+      float: right;
+      padding: 0px 0px 20px 20px;
+      width: 375px;
+    }
+  
+    iframe {
+      display: block;
+      width: 100%;
+    }
+  
+    div#mapdiv {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+      text-align: left;
+      align-items: center;
+      justify-items: center;
+      width: 1fr;
+      margin: 0;
+    }
+  
+    .smicon {
+      width: 45px;
+      padding: 5px;
+    }
+
+    div#weather_pics {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2px;
+      justify-content: center;
+      justify-items: center;
+    }
+  
+    h2.gal_hl {
+      font-size: 1.5rem;    
+    }
+}
