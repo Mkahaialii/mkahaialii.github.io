@@ -1,18 +1,15 @@
 @media only screen and (min-width: 35rem) {
     section.headings1 {
-      font-size: 2rem;
-      margin-top: 5rem;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      text-align: left;
     }
   
     div.headings2 {
       font-size: 0.8rem;
     }
   
-    section.headings1 {
-      text-align: left;
-    }
-  
-    #headerimg_small {
+    #logo {
       padding-right: 2em;
       width: 180px;
     }
