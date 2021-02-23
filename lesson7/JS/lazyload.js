@@ -35,6 +35,7 @@
 //   });
 // }
 
+
 //Get all the images with data-src attribute
 const images = document.querySelectorAll("[data-src]");
 
