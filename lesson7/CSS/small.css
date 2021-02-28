@@ -396,24 +396,14 @@ h1.h1sc {
 
 /* Table Build Activity*/
 
-body {
-  font-family: "Georgia", sans-serif;
-  margin: 0 auto;
-}
-
-div {
-  box-shadow: 10px 10px 10px #999;
-  margin: 0 auto;
-  width: 420px;
-  margin-top: 10em;
-}
-
 table,
 th,
 td {
   border: 1.1px solid rgba(199, 199, 199, 0.575);
   border-collapse: collapse;
   width: 420px;
+  font-family: "Georgia", sans-serif;
+  margin: 0 auto;
 }
 
 th,
