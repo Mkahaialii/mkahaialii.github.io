@@ -1,11 +1,11 @@
 @media only screen and (min-width: 35rem) {
-    section.headings1 {
+    section.heading1 {
       font-size: 1.5rem;
       margin-top: 2rem;
       text-align: left;
     }
   
-    div.headings2 {
+    div.heading2 {
       font-size: 0.8rem;
     }
   
@@ -30,7 +30,7 @@
     }
   
     tbody {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+      box-shadow: 0 4px 8px 0 rgba(34, 34, 34, 0.7);
     }
     
     table#forecast_table {
@@ -100,6 +100,9 @@
     h2.gal_hl {
       font-size: 1.5rem;    
     }
-}
 
-/* correction*/
+    .hero .hero-image {
+      height: 400px;
+      box-shadow: 2px 2px 5px 2px rgb(44, 44, 44);    
+    }
+  }

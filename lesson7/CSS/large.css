@@ -33,7 +33,7 @@
     grid-gap: 3em;
   }
 
-  .headings1 {
+  .heading1 {
     display: grid;
     grid-column: 2/6;
     grid-row: 1;
@@ -41,7 +41,7 @@
     padding-top: 10px;
   }
 
-  section.headings1 {
+  section.heading1 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 0;
@@ -51,7 +51,7 @@
     margin: 10px;
   }
 
-  .headings2 {
+  .heading2 {
     display: grid;
     grid-column: 2/6;
     text-align: left;
