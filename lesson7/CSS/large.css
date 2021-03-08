@@ -71,11 +71,11 @@
   }
 
   #logo {
-    position: relative;
-    padding-left: 200px;
-    padding-top: 100px;
-    width: 80%;
-    margin-right: 2rem;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    width: 20%;
+    margin-right: auto;
   }
 
   #pancakes.announcement {
@@ -106,5 +106,28 @@
   .weather_gallery:hover {
       box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.8);
   }
+
+  div.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 3px solid #19647E;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .cards img {
+    align-content: center;
+  }
+  
+  .tName {
+    text-align: center;
+  }
 }
-  /*Correction*/
