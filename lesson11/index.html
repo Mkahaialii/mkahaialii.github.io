@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>TruForecast Homepage</title>
+    <meta name="AllTruforecast weather homepage"/>
+    <link rel="shortcut icon" href="images/favicon.ico"/> 
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <aside onload="toggleAnnouncement()" id="pancakes" class="announcement">
+        Saturday = Preston Pancakes in the Park!<br />
+        9:00 a.m. Saturday at the city park pavilion.
+      </aside>
+
+      <picture>
+        <img
+          id="logo"
+          src="images/icon.png"
+          alt="AllTruforecast Logo"
+      /></picture>
+      <section class="heading1">
+        <h1 class="headertitle">TruForecast</h1>
+        <br />
+      </section>
+      <div class="heading2">
+        <h2>
+          Where you can get true weather updates.
+        </h2>
+      </div>
+      <nav id="headernav">
+        <button id="navbut" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li class="active"><a href="https://mkahaialii.github.io/lesson9/index.html">Home</a></li>
+          <li><a href="https://mkahaialii.github.io/lesson11/preston.html">Preston</a></li>
+          <li><a href="https://mkahaialii.github.io/lesson11/sodasprings.html">Soda Springs</a></li>
+          <li><a href="https://mkahaialii.github.io/lesson11/fishhaven.html">Fish Haven</a></li>
+          <li><a href="https://mkahaialii.github.io/lesson11/stormcenter.html">Storm Center</a></li>
+          <li><a href="https://mkahaialii.github.io/lesson11/gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="header-title">
+        <h2 class="hero-header"> Welcome to AllTruForecast</h2>
+      </div>
+
+      <picture class="hero">
+        <source srcset="images/brightDay_medium.jpg" media="(min-width: 500px) and (max-width: 800px)">
+        <source srcset="images/brightDay_large.jpg" media="(min-width:800px )">
+        <img  class="hero-image" src="images/brightDay_large.jpg" alt="Preston local park"><br>
+      </picture>
+
+      <div class="homepage-article">
+        <h3>Article</h3>
+        <p>Lorem ipsum dolor sit amet, an dictas quaeque platonem cum, alterum signiferumque ut eum. Mei persius appellantur philosophia eu, ei error eripuit forensibus nec. Probo tibique insolens no pro. Sit no quis partiendo intellegebat, cu ferri utroque assentior vim. Lorem ipsum dolor sit amet, an dictas quaeque platonem cum, alterum signiferumque ut eum. Mei persius appellantur philosophia eu, ei error eripuit forensibus nec. Probo tibique insolens no pro. Sit no quis partiendo intellegebat, cu ferri utroque assentior vim.Lorem ipsum dolor sit amet, an dictas quaeque platonem cum, alterum signiferumque ut eum. Mei persius appellantur philosophia eu, ei error eripuit forensibus nec. Probo tibique insolens no pro. Sit no quis partiendo intellegebat, cu ferri utroque assentior vim.
+        </p>
+    </div>
+        <div class="cards"></div>
+
+    <br>
+
+      <div id="mapdiv">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d94731.53967909195!2d-111.880325!3d42.099747!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612414617377!5m2!1sen!2sus"
+          width="400"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+
+        <section id="contact_info">
+          <h4>Contact Us</h4>
+          <p>
+            TruForecast<br />
+            Main St<br />
+            Preston, ID 86432<br /><br />
+            &#9742; &nbsp; 801 555-1234<br /><br />
+            &#9993; &nbsp; email@Truforecast.com<br />
+          </p>
+          <a href="https://twitter.com/"
+            ><img class="smicon" src="images/twitter.png" alt="twitter icon"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img class="smicon" src="images/insta.png" alt="instagram icon"
+          /></a>
+          <a href="https://www.facebook.com/"
+            ><img class="smicon" loading="lazy" src="images/facebook.png" alt="facebook icon"
+          /></a>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear">2021</span> Mahealani Kahaialii | Oahu, Hawaii |
+        <a class="footlink" href="https://www.byui.edu/online"
+          >BYU-I Online</a>
+      <br>
+    Last Update: <span class="lastModified"></span></p>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/pancake.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/demographics.js"></script>
+    <script src="js/announcements.js"></script>
+    <script src="js/menu.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Nanun Myeongjo", "PT Sans Narrow"],
+        },
+      });
+    </script>
+  </body>
+</html>

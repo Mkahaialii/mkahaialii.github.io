@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title> Fish Haven Forecast</title>
+	<meta name="description" content="Fish Haven Forecast for Weather Site Assignment. BYU-Idaho WDD 230">
+	<link rel="shortcut icon" href="images/favicon.ico"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/small.css" />
+	<link rel="stylesheet" href="css/medium.css" />
+	<link rel="stylesheet" href="css/large.css" />
+</head>
+
+<body>
+	<header>
+		<aside onload="toggleAnnouncement()" id="pancakes" class="announcement">
+Saturday = Preston Pancakes in the Park!<br />
+9:00 a.m. Saturday at the city park pavilion.</aside>
+		<picture>
+			<img id="logo" src="images/icon.png" alt="AllTruForecast Logo" />
+		</picture>
+		<section class="heading1">
+			<h1 class="headertitle">TruForecast</h1>
+			<br/>
+		</section>
+		<div class="heading2">
+			<h2>Where you can true and accurate weather updates.
+			</h2>
+		</div>
+
+		<nav id="headernav">
+			<button id="navbut" onclick="toggleMenu()">&#9776;</button>
+			<ul id="primaryNav" class="hide">
+				<li><a href="https://mkahaialii.github.io/lesson11/index.html">Home</a></li>
+				<li><a href="https://mkahaialii.github.io/lesson11/preston.html">Preston</a></li>
+				<li><a href="https://mkahaialii.github.io/lesson11/sodasprings.html">Soda Springs</a></li>
+				<li class="active"><a href="https://mkahaialii.github.io/lesson11/fishhaven.html">Fish Haven</a></li>
+				<li><a href="https://mkahaialii.github.io/lesson11/stormcenter.html">Storm Center</a></li>
+				<li><a href="https://mkahaialii.github.io/lesson11/gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h2 class="hero-header"> <h2>FISH HAVEN, IDAHO</h2>
+		<div class="herodiv">
+			<picture class="hero">
+				<source srcset="images/fishhaven_medium.jpg" media="(min-width: 500px) and (max-width: 800px)">
+				<source srcset="images/fishhaven_large.jpg" media="(min-width:800px )">
+				<img  class="hero-image" src="images/fishhaven_large.jpg" alt="Lake">
+			</picture>
+			<br>
+			<section class="weathersummary">
+				<h3 id="weather_summary">Weather Summary</h3>
+				<span id="current"> Current Condition:</span>
+				<span id="currentCondition"></span>
+				<span id="high">Temperature:</span>
+				<span> <span id="temperature"></span>&deg; F </span>
+				<span id="humidity">Humidity:</span>
+				<span id="humidityLevel"></span>
+				<span id="wind">Wind Speed:</span>
+				<span> <span id="windSpeed"></span> mph </span>
+				<span id="windchill">Wind Chill:</span>
+				<span id="windChill"></span>
+			</section>
+		</div>
+		<br>
+	     <div class="five">
+        <table class="table">
+          <caption>
+            <h4 class="forecast_table" class="center">Five Day Cast</h4>
+          </caption>
+          <tbody>
+            <tr class="color-table">
+            <td id="dayofWeek1"><p></p></td>
+            <td id="dayofWeek2"><p></p></td>
+            <td id="dayofWeek3"><p></p></td>
+            <td id="dayofWeek4"><p></p></td>
+            <td id="dayofWeek5"><p></p></td>
+            </tr>
+                    <tr>
+            <td>
+                <img id="imagesrc1"></img> &nbsp;
+                <img src="" alt="" id="icon1" />
+             
+            </td>
+            <td>
+                <img id="imagesrc2"></img> &nbsp;
+                <img src="" alt="" id="icon2" />
+            </td>
+            <td>
+                <img id="imagesrc3"></img> &nbsp;
+                <img src="" alt="" id="icon3" />
+            </td>
+            <td>
+                <img id="imagesrc4"></img> &nbsp;
+                <img src="" alt="" id="icon4" />
+            </td>
+            <td>
+              <img id="imagesrc5"></img> &nbsp;
+                <img src="" alt="" id="icon5" />
+            </td>
+          </tr>
+          
+            <tr>
+            <td class="color-table" id='forecast1'><p> &deg;</p></td>
+            <td class="color-table" id='forecast1'><p> &deg;</p></td>
+            <td class="color-table" id='forecast1'><p> &deg;</p></td>
+            <td class="color-table" id='forecast1'><p> &deg;</p></td>
+            <td class="color-table" id='forecast1'><p> &deg;</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+	<br>
+
+	<div class="articleFH">
+		<img class="articleimgFH" src="images/boat.jpg" alt="boat on shore">
+		<h4>ARTICLE</h4>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In posuere felis nec tortor. Pellentesque faucibus. Ut accumsan ultricies elit. Maecenas at justo id velit placerat molestie. Donec dictum lectus non odio. Cras a ante vitae enim iaculis aliquam. Mauris nunc quam, venenatis nec, euismod sit amet, egestas placerat, est. </p>
+		</div>
+<br>
+	<div class="announcement">
+		<h2>Town Events</h2>
+	</div>
+<br>
+	<div id="mapdiv">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d94731.53967909195!2d-111.880325!3d42.099747!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612414617377!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<section id="contact_info">
+			<h4>Contact Us</h4>
+			<p>TruForecast<br/>
+				Main St<br/>
+				Preston, ID 86432<br/><br/>
+				&#9742; &nbsp; 801 555-1234<br/><br/>
+				&#9993; &nbsp; email@Truforecast.com<br/>
+			</p>
+			<a href="https://twitter.com/"><img class="smicon" src="images/Twitter.png" alt="twitter icon"/></a>
+			<a href="https://www.instagram.com/"><img class="smicon" src="images/Insta.png" alt="instagram icon"/></a>
+			<a href="https://www.facebook.com/"><img class="smicon" loading="lazy" src="images/facebook.png" alt="facebook icon"/></a>
+		</section>
+	</div>
+</main>
+<footer>
+	<p>&copy; <span id="currentyear">2021</span> Mahealani Kahaialii | Oahu, Hawaii |
+	<a class="footlink" href="https://www.byui.edu/online">BYU-I Online</a>
+	<br>
+	Weather data provided by: 
+	<a class="footlink" href="https://openweathermap.org/">Open Weather Map</a>
+	<br>
+	Last Update: <span class="lastModified"></span></p>
+</footer>
+<script src="js/date.js"></script>
+<script src="js/pancake.js"></script>
+<script src="js/lazyload.js"></script>
+<script src="js/weatherapi.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/announcements.js"></script>
+<script>
+	WebFont.load({
+		google: {
+			families: ["Nanun Myeongjo", "PT Sans Narrow"],
+		},
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+@media only screen and (min-width: 35rem) {
+    section.heading1 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      text-align: left;
+    }
+  
+    div.heading2 {
+      font-size: 0.8rem;
+    }
+
+    section#contact_info {
+      background-color: white;
+      box-shadow: none;
+    }
+  
+    #logo {
+    
+      padding-right: 15px 2em 5px 15px;
+      width: 10%;
+      /*width: 150px;*/
+    }
+  
+    .weathersummary {
+      top: 5rem;
+      left: 2rem;
+      padding: 1rem;
+    }
+  
+    .weather_icon {
+      width: 100px;
+    }
+  
+    div#five_day {
+      display: block;
+      width: 100%;
+    }
+
+    caption {
+      width: 800px;
+    }
+  
+    tbody {
+      box-shadow: 0 4px 8px 0 rgba(34, 34, 34, 0.7);
+    }
+    
+    table#forecast_table {
+      width: 85%;
+      padding-bottom: 45px;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      text-align: center;
+      color: black;
+    }
+  
+    .color_table {
+      background-color: #2a3640;
+    }
+  
+    table.center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    h3.five_day_title {
+      font-size: 1.5rem;
+    }
+  
+    img#ice_shack {
+      float: right;
+      padding: 0px 0px 20px 20px;
+      width: 375px;
+    }
+  
+    iframe {
+      display: block;
+      width: 100%;
+    }
+  
+    div#mapdiv {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+      text-align: left;
+      align-items: center;
+      justify-items: center;
+      width: 1fr;
+      margin: 0;
+    }
+  
+    .smicon {
+      width: 45px;
+      padding: 5px;
+    }
+
+    div#weather_pics {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2px;
+      justify-content: center;
+    }
+  
+    h2.gal_hl {
+      font-size: 1.5rem;    
+    }
+
+    .hero .hero-image {
+      box-shadow: 2px 2px 5px 2px rgb(44, 44, 44);    
+    }
+
+    article {
+      max-width: 600px;
+      margin: .5rem auto;
+      border:1px solid #bbb;
+      background-color: linen;
+    }
+
+    .articleimg {
+      float: left;
+    }
+
+    .articleimgSS {
+      float: right;
+    }
+
+    .articleimgFH {
+      float: right;
+    }
+
+    div.article h4{
+      padding: 5px 0 0 320px;
+    }
+
+    div.article p{
+      padding-left: 320px;
+    }
+
+    section .cards {
+      margin: .5rem auto;
+      border:1px solid #bbb;
+      background-color: #eee;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    article {
+      display: flex;
+      flex-direction: row;
+    }
+        
+    article:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+        
+    img {
+      padding: 0;
+      margin-bottom: 10px;
+    }
+
+
+td#dayofweek1 {
+  padding: 1rem;
+}
+
+td#forecast1{
+  padding: 1rem;
+}
+  table.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #icon1, #icon2, #icon3, #icon4, #icon5 {
+    padding: 15px;
+    width: 100px;
+  }
+  }

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-s">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description" content="Citizen weather information updates." />
+    <title>TruForcast Storm Center</title>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+</head>
+
+<body>
+    <header>
+        <aside onload="toggleAnnouncement()" id="pancakes" class="announcement">
+            Saturday = Preston Pancakes in the Park!<br />
+            9:00 a.m. Saturday at the city park pavilion.
+        </aside>
+        <picture>
+            <img id="logo" src="images/icon.png" alt="AllTruForecast Logo" />
+        </picture>
+        <section class="heading1">
+            <h1 class="headertitle">TruForecast</h1>
+            <br />
+        </section>
+        <div class="heading2">
+            <h2>
+                Where you can true and accurate weather updates.
+            </h2>
+        </div>
+        <nav id="headernav">
+            <button id="navbut" onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="https://mkahaialii.github.io/lesson11/index.html">Home</a></li>
+                <li><a href="https://mkahaialii.github.io/lesson11/index.html">Preston</a></li>
+                <li><a href="https://mkahaialii.github.io/lesson11/sodaSprings.html">Soda Springs</a></li>
+                <li><a href="https://mkahaialii.github.io/lesson11/fishHaven.html">Fish Haven</a></li>
+                <li class="active"><a href="https://mkahaialii.github.io/lesson11/stormcenter.html">Storm Center</a></li>
+                <li><a href="https://mkahaialii.github.io/lesson11/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="herodiv">
+      <picture class="hero">
+        <source srcset="images/stormcenter_medium.jpg" media="(min-width: 500px) and (max-width: 800px)">
+        <source srcset="images/stormcenter_large.jpg" media="(min-width:800px )">
+        <img  class="hero-image" src="images/stormcenter_large.jpg" alt="Preston local park">
+      </picture>
+        </div>
+
+        <h1 class="h1sc">Storm Center</h1>
+
+        <h3>Share your weather here with Alltruforecast. Whether it is a perfectly sunny day
+            or a choatic windstorm, share your stories with us and connect with your community.
+            Please leave detailed information!</h3>
+
+        <div class="formdiv">
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend class="legendtitle">Reporter's Information</legend>
+                    <label class="top">First Name*<input type="text" name="fname" required></label>
+                    <label class="top">Last Name*:<input type="text" name="lname" required></label>
+                    <label class="top">Phone*<input type="tel" name="phone" placeholder="5555555555" required></label>
+                    <label class="top">Zip Code*<input type="number" name="zip" placeholder="90210" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend class="legendtitle">Storm Data</legend>
+                    <label class="top">Storm Date<input type="date" name="date"></label>
+                    <label class="top">Storm Type</label>
+                    <select name="subject" class="formbut">
+                        <option selected disabled>Please Select</option>
+                        <option value="flood">Flash Flood</option>
+                        <option value="hail">Hail</option>
+                        <option value="hurricane">Hurricane</option>
+                        <option value="thunderstorm">Thunderstorm</option>
+                        <option value="tornado">Tornado</option>
+                        <option value="sunny">Sunny Day</option>
+                    </select>
+                    <label class="top">Storm Area</label>
+                    <select name="select region" class="formbut">
+                        <option selected disabled>Please Select</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda_springs">Soda Springs</option>
+                        <option value="fist_haven">Fish Haven</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend class="legendtitle">Storm Severity</legend>
+                    <label class="top">User in Danger</label>
+                    <label class="sbs"><input type="radio" name="danger" value="yes" />&nbsp; Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="no" />&nbsp; No</label>
+                    <label class="sbs"><input type="radio" name="danger" value="maybe" />&nbsp; Maybe</label>
+
+                    <div id="rate"><label for="rating">Storm Intensity (on a scale of 1-10)</label></div>
+                    <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rating" value="1" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">1</span>
+                    </label>
+            
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                </fieldset>
+                <fieldset id="comments">
+                    <legend class="legendtitle">Additional Comments</legend>
+                    <label><input type="text" class="txtarea"></label>
+                </fieldset>
+                <input type="submit" value="Report Weather Event" class="submitBtn">
+            </form>
+        </div>
+<br>
+
+
+<div id="mapdiv">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d94731.53967909195!2d-111.880325!3d42.099747!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612414617377!5m2!1sen!2sus"
+      width="400" height="300" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"
+    ></iframe>
+
+    <section id="contact_info">
+      <h4>Contact Us</h4>
+      <p>
+        TruForecast<br />
+        Main St<br />
+        Preston, ID 86432<br /><br />
+        &#9742; &nbsp; 801 555-1234<br /><br />
+        &#9993; &nbsp; email@Truforecast.com<br />
+      </p>
+      <a href="https://twitter.com/"
+        ><img class="smicon" src="images/Twitter.png" alt="twitter icon"
+      /></a>
+      <a href="https://www.instagram.com/"
+        ><img class="smicon" src="images/Insta.png" alt="instagram icon"
+      /></a>
+      <a href="https://www.facebook.com/"
+        ><img class="smicon" loading="lazy" src="images/facebook.png" alt="facebook icon"
+      /></a>
+    </section>
+  </div>
+</main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear">2021</span> Mahealani Kahaialii | Oahu, Hawaii |
+        <a class="footlink" href="https://www.byui.edu/online"
+          >BYU-I Online</a>
+      <br>
+    Last Update: <span class="lastModified"></span></p>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/pancake.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/demographics.js"></script>
+    <script src="js/menu.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Nanun Myeongjo", "PT Sans Narrow"],
+        },
+      });
+    </script>
+</body>
+
+</html>

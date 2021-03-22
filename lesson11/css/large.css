@@ -1,0 +1,158 @@
+@media only screen and (min-width: 64rem) {
+
+    nav {
+      width: 100%;
+      align-items: center;
+      font-size: 1rem;
+    }
+  
+    nav button {
+      display: none;
+      padding: 2em;
+    }
+  
+    nav ul.hide {
+      display: flex;
+    }
+  
+    nav ul li {
+      flex: 1 1 100%;
+    }
+  
+    nav ul li a {
+      border: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
+      padding: 0.6rem 1rem;
+      text-align: center;
+    }
+  
+    header {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 200px 10px 10px;
+      grid-gap: 3em;
+    }
+  
+    .heading1 {
+      display: grid;
+      grid-column: 2/6;
+      grid-row: 1;
+      font-size: 2rem;
+      padding-top: 10px;
+    }
+  
+    section.heading1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 0;
+    }
+  
+    h1.headertitle {
+      margin: 10px;
+    }
+  
+    .heading2 {
+      display: grid;
+      grid-column: 2/6;
+      text-align: left;
+    }
+  
+    h2.headertitle {
+      font-size: 1.2rem;
+    }
+  
+    div.headings2 {
+      color: white;
+    }
+  
+    nav {
+      grid-column: 1/6;
+      width: 100%;
+    }
+  
+    #logo {
+      position: absolute;
+      left: 15%;
+      top: 5%;
+      width: 18%;
+      margin-right: auto;
+    }
+  
+    #pancakes.announcement {
+      position: absolute;
+      width: 100%;
+      padding: .5rem;
+      margin-bottom: 5rem;
+    }
+  
+    main {
+      max-width: 80rem;
+      align-items: center;
+    }
+  
+    .smicon {
+      width: 60px;
+    }
+  
+    div#weather_pics {
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 80rem;
+    }
+  
+    h2.gal_hl {
+        font-size: 2rem;
+    }
+  
+    .weather_gallery:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.8);
+    }
+  
+    div.cards{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+      text-align: center;
+      margin: 20px auto;
+    }
+  
+    article {
+      display: grid;
+      grid-template-columns: 1fr;
+      border: 3px solid #19647E;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    div.article p{
+      padding: 0 40px 0 350px;
+    }
+  
+    div.article h4 {
+      padding-left: 350px;
+    }
+  
+    div.articleSS p{
+      padding: 0 350px 0 40px;
+    }
+  
+    div.articleSS h4 {
+      padding-right: 350px;
+    }
+  
+    div.articleFH p{
+      height: 300px;
+      padding: 0 350px 0 40px;
+    }
+  
+    div.articleFH h4 {
+      padding-right: 650px;
+    }
+  
+    .cards img {
+      align-content: center;
+    }
+    
+    .tName {
+      text-align: center;
+    }
+  }
