@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Nanum+Myeongjo:wght@800&family=PT+Sans+Narrow&display=swap");
+
+ 
+
+ 
+
+:root {
+
+  --russian-violet: #0c0a3eff;
+
+  --carolina-blue: #5aa0d6ff;
+
+  --piggy-pink: #ffe4f0ff;
+
+  --magnolia: #eae6efff;
+
+  --aero-blue: #c7efcfff;
+
+  --amaranth-pink: #ff96bcff;
+
+  --lilac: #c19ac7ff;
+
+}
+
+/* phone or baseline views *******************/
+
+ 
+
+h1{
+
+  font-size: 3em;
+
+  color: var(--aero-blue);
+
+  font-family: "Nanum Myeongjo";
+
+  text-align: center;
+
+  padding-bottom: 0;
+
+  margin-bottom: 0;
+
+}
+
+ 
+
+h3{
+
+  font-size: 1.8em;
+
+  font-family: "Nanum Myeongjo";
+
+  text-align: center;
+
+}
+
+ 
+
+h2 {
+
+  font-size: 1em;
+
+  color: white;
+
+  font-family: "Nanum Myeongjo";
+
+  text-align: center;
+
+  padding-bottom: 25px;
+
+}
+
+ 
+
+img {
+
+  display: flex;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  width: 30%;
+
+  padding-right: 10px;
+
+  text-shadow: 2px 2px 4px #000000;
+
+  padding-top: 30px;
+
+  padding-bottom: 30px;
+
+}
+
+ 
+
+.logo {
+
+  width: 80%;
+
+}
+
+ 
+
+header {
+
+  background-color: var(--russian-violet);
+
+  display: block;
+
+}
+
+ 
+
+.header {
+
+  display: flex;
+
+  padding: 2rem;
+
+}
+
+ 
+
+.sections {
+
+  display: block;
+
+  margin: 10 px auto;
+
+  border: 1px solid var(--aero-blue) ;
+
+  padding: 15px;
+
+  background-color: white;
+
+  color: black;
+
+  font-family: Georgia, sans serif;
+
+  align-content: center;
+
+}
+
+ 
+
+footer {
+
+  background-color: var(--russian-violet);
+
+  padding: 0.8em;
+
+  font-family: Georgia, sans-serif;
+
+  font-size: 12px;
+
+  text-align: center;
+
+}
+
+ 
+
+footer p {
+
+  color: white;
+
+  font-size: 1em;
+
+}
+
+ 
+
+footer a {
+
+  text-decoration: none;
+
+  color: white;
+
+}
+
+ 
+
+a:hover {
+
+  background-color: var(--lilac);
+
+}
+
+ 
+
+ 
+
+div.mobile-container {
+
+  max-width: 100%;
+
+  margin: auto;
+
+}
+
+ 
+
+.topnav {
+
+  overflow: hidden;
+
+  background-color: var(--aero-blue);
+
+  position: relative;
+
+  color: black;
+
+  display: flex;
+
+}
+
+ 
+
+.topnav #myLinks {
+
+  display: none;
+
+  width: 100%;
+
+}
+
+ 
+
+.topnav ul {
+
+  list-style-type: none;
+
+}
+
+ 
+
+.topnav a {
+
+  color: black;
+
+  padding: 14px 100%;
+
+  text-decoration: none;
+
+  font-size: 1.5em;
+
+  display: flex;
+
+  border: 2px solid white;
+
+  width: 100%;
+
+  justify-content: center;
+
+}
+
+ 
+
+.topnav a:hover {
+
+  background-color: var(--piggy-pink);
+
+  color: var(--carolina-blue);
+
+}
+
+ 
+
+.icon {
+
+ background: transparent;
+
+  color: black;
+
+  width: 50px;
+
+  height: 50px;
+
+}
+
+ 
+
+.fixed:after {
+
+    content: "";
+
+    display: table;
+
+    clear: both;
+
+  }
